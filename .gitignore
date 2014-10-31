@@ -13,3 +13,6 @@ vim/bundle
 
 # Ignore vim/tmp
 vim/tmp
+
+# Ignore zsh/cache
+zsh/cache
