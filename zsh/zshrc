@@ -11,4 +11,7 @@ source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
 #source ~/.zsh/hitch.zsh
 # source /opt/github/env.sh
-source  ${HOME}/.dotfiles/z/z.sh
+source  ${HOME}/Documents/dotfiles/z/z.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
+[[ -s "/Users/Caixiaopig/.jenv/bin/jenv-init.sh" ]] && source "/Users/Caixiaopig/.jenv/bin/jenv-init.sh" && source "/Users/Caixiaopig/.jenv/commands/completion.sh"

@@ -34,13 +34,17 @@ if [[ $IS_LINUX -eq 1 ]]; then
 fi
 
 # Set LC_ALL="UTF8"
-export LC_ALL=en_US.UTF-8
+export LC_ALL=zh_CN.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export LANG=en_US.UTF-8
+export LANG=zh_CN.UTF-8
 
 # Virtual Environment Stuff
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/code/django
+export PROJECT_HOME=$HOME/Code/python_project
 if [[ $HAS_VIRTUALENV -eq 1 ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+# Golang
+export GOROOT=/usr/local/opt/go
+export PATH=$PATH:$GOROOT/libexec/bin
